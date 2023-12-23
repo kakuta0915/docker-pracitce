@@ -9,5 +9,8 @@ WORKDIR /var/www
 COPY ./src /var/www
 
 # dockerを実行するコマンド
-# /bin/bashでbashを起動できる
-CMD ["/bin/bash"]
+# /bin/bashでbashを起動
+# CMD ["/bin/bash"]
+
+# 変更
+CMD ["bundle", "exec", "ruby", "app.rb"]
