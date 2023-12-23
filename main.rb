@@ -7,7 +7,7 @@ server = WEBrick::HTTPServer.new(
 )
 
 server.mount_proc('/') do |req, res|
-  res.body = 'よろしくおっぱっぴー'
+  res.body = 'hello'
 end
 
 server.start
