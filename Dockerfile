@@ -8,6 +8,10 @@ WORKDIR /var/www
 # ローカルのsrcディレクトリ以下のファイルを/var/wwwにコピー
 COPY ./src /var/www
 
+# コマンドを実行するためのコマンド
+RUN bundle config --local set path 'vender/bundle'
+RUN bundle install
+
 # dockerを実行するコマンド
 # /bin/bashでbashを起動
 # CMD ["/bin/bash"]
