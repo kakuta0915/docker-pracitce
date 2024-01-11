@@ -6,7 +6,7 @@ metadata:
     app: apa000kube
 spec:
   selector:
-    machLabels: 
+    matchLabels: 
       app: apa000kube
   replicas: 3
   template:
