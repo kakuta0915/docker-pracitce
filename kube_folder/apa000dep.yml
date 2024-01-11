@@ -6,8 +6,8 @@ metadata:
     app: apa000kube
 spec:
   selector:
-    - machLabels: 
-        app: apa000kube
+    machLabels: 
+      app: apa000kube
   replicas: 3
   template:
     metadata:
@@ -18,4 +18,4 @@ spec:
         - name: apa000ex91
           image: httpd
           ports:
-            - containerPort: 80
+          - containerPort: 80
